@@ -1,0 +1,30 @@
+# .gitignoreファイルを作成
+touch .gitignore
+
+# .gitignoreに以下の内容を追加
+cat << EOF > .gitignore
+# バイナリファイル
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# テストバイナリ
+*.test
+
+# カバレッジファイル
+*.out
+
+# 依存関係のディレクトリ
+/vendor/
+
+# 環境変数ファイル
+.env
+
+# データベースファイル
+*.db
+
+# OSが生成するファイル
+.DS_Store
+EOF
